@@ -3,7 +3,6 @@ function sum_power_2_digit(num)
     n = BigFloat(exp2(num), precision=1024)
     s = string(n)
     l, = length(s)
-    s[1]
     m = Vector{Int64}(zeros(l))
     for i in 1:l
         if occursin(r"[0-9]", string(s[i]))
