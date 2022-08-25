@@ -5,10 +5,9 @@ function is_pandigital(x)
     x
 end
 
-panditial = is_pandigital.(123456789:9:987654321)
-filter!(!iszero, panditial)
-s, = size(panditial)
-pandigital = panditial
+pandigital = is_pandigital.(123456789:9:987654321)
+filter!(!iszero, pandigital)
+s, = size(pandigital)
 
 function m_2_3(n)
     a = digits(n)
